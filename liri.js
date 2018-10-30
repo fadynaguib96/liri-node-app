@@ -58,19 +58,20 @@ function concert() {
         // If the request is successful
         if (!error && response.statusCode === 200) {
 
-            var res = JSON.parse(body)
-
-
-
+            
+            
+            
             for (var j = 0; j < body.length; j++) {
-
-                var date = moment(res[j].datetime).format("MM/DD/YYYY")
+                
+                var res = JSON.parse(body)
+     
 
 
                 console.log("---------------")
                 console.log("Venue Name: " + res[j].venue.name)
                 console.log("Venue Location: " + res[j].venue.city + ", " + res[j].venue.region + ", " + res[j].venue.country)
-                console.log("Date of event: " + date)
+                console.log("Date of event: " + moment(res[j].datetime).format("MM/DD/YYYY"))
+               
 
 
             }
