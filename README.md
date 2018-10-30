@@ -4,4 +4,6 @@
 
 <p> Using the liri bot, we can use spotify-this-song + song name to look up information about the song in this format </p>
 
+![GitHub Logo](/images/spotify-this-song2.jpg)
+Format: ![Alt Text](url)
 
